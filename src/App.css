@@ -1,8 +1,12 @@
 @import url("https://fonts.cdnfonts.com/css/ds-arabic");
+@import "@fontsource/roboto/300.css";
+@import "@fontsource/roboto/400.css";
+@import "@fontsource/roboto/500.css";
+@import "@fontsource/roboto/700.css";
 
 body {
   background-color: #004643;
-  background-image: url("./img/silhouette_white.png");
+  background-image: url("/images/silhouette_white.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;

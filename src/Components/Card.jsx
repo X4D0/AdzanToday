@@ -91,7 +91,15 @@ export default function Card({ id }) {
             height="100"
             x="0"
             y="0"
-            href={`src/img/${timeOfDay}.png`}
+            href={
+              timeOfDay == "Dawn"
+                ? "images/Dawn.png"
+                : timeOfDay == "Noon"
+                ? "images/Noon.png"
+                : timeOfDay == "Dusk"
+                ? "images/Dusk.png"
+                : "images/Night.png"
+            }
           ></image>
         </svg>
         <div className="main">
