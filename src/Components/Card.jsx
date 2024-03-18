@@ -28,7 +28,7 @@ export default function Card({ id }) {
   useEffect(() => {
     axios
       .get(
-        `https://api.myquran.com/v1/sholat/jadwal/${id}/${year}/${month}/${day}`
+        `https://api.myquran.com/v2/sholat/jadwal/${id}/${year}/${month}/${day}`
       )
       .then((result) => {
         setPrayer(result.data);

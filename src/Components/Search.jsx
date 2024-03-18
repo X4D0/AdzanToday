@@ -17,9 +17,9 @@ export default function Search() {
 
   useEffect(() => {
     axios
-      .get("https://api.myquran.com/v1/sholat/kota/semua")
+      .get("https://api.myquran.com/v2/sholat/kota/semua")
       .then((result) => {
-        setCities(result.data);
+        setCities(result.data.data);
         setLoading(false);
       })
       .catch((error) => console.log(error));
